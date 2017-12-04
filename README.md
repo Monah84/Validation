@@ -1,5 +1,5 @@
 # Validation
-A very simple way and easy to use validation library that validates any object
+A very simple way and easy to use validation library that validates any object that inherits from `IValidatable`
 
 ## How to use
 Usually you have couple of classes like `Employee` or `Person` or `Car` and you want to validate these objects
@@ -7,7 +7,7 @@ Usually you have couple of classes like `Employee` or `Person` or `Car` and you 
 1. First Step is to define your classes for example `Employee`
 
 ```csharp
-    public class Employee
+    public class Employee: IValidatable
     {
         public string FirstName{get; set;}
         public string LastName {get; set;}
